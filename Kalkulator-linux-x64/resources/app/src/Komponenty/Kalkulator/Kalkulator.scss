@@ -1,0 +1,109 @@
+$wysokoscOkna: 100vh;
+$szerokoscOkna: 100vw;
+$kolorTekstu: #333;
+$kolorTekstuJasny: #555;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#kalkulator {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    background: #f2f2f2;
+    width: $szerokoscOkna;
+    height: $wysokoscOkna;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+#pasek-gorny {
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+
+    .ikona {
+        font-size: 1.2rem;
+        align-self: center;
+        color: $kolorTekstu;
+        font-weight: normal;
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+    .ikona-lewo {
+        margin-left: 15px;
+    }
+
+    .ikona-prawo {
+        margin-right: 15px;
+        margin-left: auto;
+    }
+
+    h2 {
+        align-self: center;
+        margin: 0 0 0 20px;
+        font-size: 1.2rem;
+        color: $kolorTekstu;
+        font-weight: normal;
+    }
+}
+
+#ekran {
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .glowna {
+        margin-top: auto;
+        font-weight: bold;
+        font-size: 3.5rem;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .historia {
+        color: $kolorTekstuJasny;
+        padding-right: 10px;
+    }
+}
+
+#pasek-pamieci {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-items: stretch;
+    height: 6%;
+    background: magenta;
+
+    .przycisk-pamieci {
+        min-width: 0px;
+        height: auto;
+    }
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#klawiatura {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: stretch;
+
+    .rzad {
+        display: flex;
+        flex-direction: row;
+        justify-items: stretch;
+        align-items: stretch;
+        height: (1/6) * 100%;
+
+        .przycisk-klawiatury {
+            min-width: 0px;
+            width: 25%;
+            height: auto;
+        }
+    }
+}

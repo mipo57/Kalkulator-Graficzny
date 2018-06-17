@@ -1,0 +1,4 @@
+.widok {
+    display: grid;
+    grid-template-columns: calc(500px * 235 / 400) auto;
+}
